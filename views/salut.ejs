@@ -1,0 +1,14 @@
+<p>Bonjour mon cher ami 
+    <%= nom %> 
+    (<%= login %>) 
+    ton mot de passe est:
+    <%= pwd %>
+</p>
+<p>Voici les rôles de l'utilisateur: </p>
+<ul>
+    <% for(var unRole of roles) { %>
+        <li>
+            <%= unRole %>
+        </li>
+    <% } %>
+</ul>

@@ -1,0 +1,25 @@
+<h2>Voici tous mes usagers</h2>
+<ol>
+    <% for(var unUsager of usagers) { %>
+        <li>Login: 
+            <%= unUsager.login %>
+            <ul>
+                <li>Nom: 
+                    <%= unUsager.nom %>
+                </li>
+                <li>pwd: 
+                    <%= unUsager.pwd %>
+                </li>
+                <li>r&ocirc;les: 
+                    <% for(var unRole of unUsager.roles) { %>
+                        <%= unRole %>
+                    <% } %>
+                    
+                </li>
+                <li>r&ocirc;les: 
+                    <%= unUsager.roles.map(val => (val)); %>                    
+                </li>
+            </ul>
+        </li>
+    <% } %>
+</ol>
