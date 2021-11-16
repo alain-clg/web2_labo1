@@ -11,4 +11,15 @@ router.get('/salut', (requete, reponse) => {
         roles: ['admin', 'normal', 'cms', 'autre']
     });
 });
+router.get('/title', (requete, reponse) => {
+    reponse.render('salut', {
+        title: 'Mon titre',
+        layout: 'layout2colonnes',
+        nom: 'Bob Larue',
+        login: 'larueb',
+        pwd: 'qwerty',
+        roles: ['admin', 'normal', 'cms', 'autre']
+    });
+});
+
 module.exports = router;

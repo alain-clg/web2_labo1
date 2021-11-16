@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voici un titre par defaut...</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <style>
+        body { 
+            background-color: #eee;
+            font-size: 140%;
+            padding: 50px;
+        }
+        header, footer {
+            background-color: ghostwhite;
+            padding: 20px;
+        }
+        main {
+            background-color: rgb(216, 216, 216);
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            padding: 10px;
+            grid-gap: 5px;
+        }
+        main > div {
+            background-color: cornsilk;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon beau header de site Web</h1>
+    </header>
+    <main>
+        <%- body %>
+    </main>
+    <footer>
+        <p>&copy; - Alain</p>
+    </footer>
+</body>
+</html>

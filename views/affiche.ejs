@@ -12,13 +12,13 @@
 <ol>
     <% for(var unUsager of usagers) { %>
         <li class="listePrincipale">Login: 
-            <%= unUsager.login %>
+            <%= unUsager.email %>
             <ul class="listeSecondaire">
                 <li>Nom: 
                     <%= unUsager.nom %>
                 </li>
                 <li>pwd: 
-                    <%= unUsager.pwd %>
+                    <%= unUsager.password %>
                 </li>
                 <li>r&ocirc;les: 
                     <% for(var unRole of unUsager.roles) { %>

@@ -1,0 +1,19 @@
+body {
+    background-color: #eee;
+    padding: 20px;
+}
+main {
+    background-color: cornflowerblue;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+    grid-gap: 5px;
+}
+header, footer {
+    background-color: ghostwhite;
+    padding: 20px;
+}
+main > div {
+    background: cornsilk;
+    padding: 8px;
+}
