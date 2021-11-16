@@ -9,7 +9,6 @@ router.get('/affiche', (requete, reponse) => {
         if (err) throw err;
         reponse.render('affiche', {usagers: usagers});
     }, 100);
-    
 });
 router.get('/login', (requete, reponse) => reponse.render('login'));
 router.get('/register', (requete, reponse) => reponse.render('register'));
